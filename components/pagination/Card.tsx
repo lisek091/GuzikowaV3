@@ -6,7 +6,7 @@ const Card = () =>{
             <div id="left" className="hidden sm:flex sm:w-1/12 items-center justify-start"></div>
             <div id='center' className="w-full cardBackground1">
                 <div className="absolute mt-52 opacity-50 z-10 hover:opacity-80 hover:cursor-pointer">
-                    <div className="bg-white h-16 w-16 rounded-full items-center justify-start flex flex-row hidden">
+                    <div className="bg-white h-16 w-16 rounded-full items-center justify-start hidden">
                         <AiOutlineArrowLeft size={50} style={{marginLeft:"4px"}}/>
                     </div>
                 </div>
