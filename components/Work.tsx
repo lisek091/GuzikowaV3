@@ -5,7 +5,7 @@ const Work = () =>{
             CZYM SIE FIRMA ZAJMUJE??
         </h1>
         <div>
-            segmenty oferta itd klikalne
+            segmenty oferta itd klikalne 
         </div>
     </div>
     )

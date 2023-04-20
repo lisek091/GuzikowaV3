@@ -3,28 +3,31 @@ import {AiOutlineMail,AiTwotonePhone} from 'react-icons/ai'
 import ContactForm from './ContactForm'
 const ContactInfo = () => {
   return (
-    <div className='m-8'>
-      <div className='flex justify-center'>
+    <div className='m-8 xl:flex justify-center'>
+      <div className=''>
         <div className='lewo info o firmie'>
-          <h3 className='text-5xl'> Zapraszamy do kontaktu </h3>
-          <div className='flex justify-center mt-4'>
-            <p className='flex text-3xl mr-4'><AiOutlineMail style={{marginRight:"3"}} size={35} color='blue'/>biuro@md1.pl</p>
-            <p className='flex text-3xl'><AiTwotonePhone style={{marginRight:"3"}} size={35} color='blue'/>731185100</p>
+          <h3 className='flex justify-center text-4xl'> Zapraszamy do</h3>
+          <h3 className='flex justify-center text-4xl'>kontaktu </h3>
+          <div className='mt-4'>
+            <p className='flex justify-center text-3xl mr-4'><AiOutlineMail style={{marginRight:"5"}} size={35} color='blue'/>biuro@md1.pl</p>
+            <p className='flex justify-center text-3xl mt-3'><AiTwotonePhone style={{marginRight:"3"}} size={35} color='blue'/>+48 731185100</p>
           </div>
-          <div className='flex my-4'>
-           <div className="logoBackground h-24 w-60 mx-4"/>
+          <div className='my-4'>
+            <div className='mb-2 grid grid-cols-1 place-items-center'>
+              <div className="h-20 w-52 sm:h-24 sm:w-60 mx-4 logoBackground"></div>
+            </div>
           <div>
-            <p className='text-2xl'>M&D.group Sp. z o.o.</p>
-            <p className='text-2xl'>Adres: ul. Gwarków 5, </p>
-            <p className='text-2xl'>43-143 Lędziny </p>
+            <p className='text-2xl flex justify-center'>M&D.group Sp. z o.o.</p>
+            <p className='text-2xl flex justify-center'>Adres: ul. Gwarków 5, </p>
+            <p className='text-2xl flex justify-center'>43-143 Lędziny </p>
           </div>
           </div>
-        </div>
-        <div className="border-2 border-blue-300 mx-8 my-2 sm:border-spacing-6 rounded-lg hidden xl:block"></div>
-        <div className='hidden xl:block'>
-        <ContactForm/>
         </div>
       </div>
+        <div className="border-2 border-blue-300 mx-8 my-2 border-spacing-6 rounded-lg hidden xl:flex"></div>
+        <div className='hidden xl:block'>
+          <ContactForm/>
+        </div>
     </div>
   )
 }

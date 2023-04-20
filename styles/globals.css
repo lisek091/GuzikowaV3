@@ -9,14 +9,16 @@
     background-size: cover;
 }
 .cardBackground1 {
-    background-image: url("../utils/1cut.jpg");
+    background-image: url("../utils/13cut.jpeg");
     min-width: 130px;
     min-height: 50px;
     background-size: cover;
+    background-position: center
 }
 .cardBackground2 {
-    background-image: url("../utils/3cut.jpg");
+    background-image: url("../utils/11cut.jpeg");
     background-size: cover;
+    background-position: center
 }
 .supply1{
     background-image: url("../utils/gealanb.jpg");
