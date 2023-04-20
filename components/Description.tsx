@@ -1,6 +1,6 @@
 const Description = () =>{
     return (
-        <div className="mx-5 my-12 lg:flex lg:justify-center block text-center w-full">
+        <div className="lg:mx-5 my-12 lg:flex lg:justify-center block text-center w-full">
             <div className="lg:w-1/3">
                 <h1 className="text-2xl">Dlaczego my?</h1>
                 <h3>Tutaj będzie opis</h3>
