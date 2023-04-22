@@ -9,8 +9,8 @@ const ContactInfo = () => {
           <h3 className='flex justify-center text-4xl'> Zapraszamy do</h3>
           <h3 className='flex justify-center text-4xl'>kontaktu </h3>
           <div className='mt-4'>
-            <p className='flex justify-center text-3xl mr-4'><AiOutlineMail style={{marginRight:"5"}} size={35} color='blue'/>biuro@md1.pl</p>
-            <p className='flex justify-center text-3xl mt-3'><AiTwotonePhone style={{marginRight:"3"}} size={35} color='blue'/>+48 731185100</p>
+            <p className='flex justify-center text-3xl mr-4'><AiOutlineMail className="text-blue-900" style={{marginRight:"5"}} size={35} />biuro@md1.pl</p>
+            <p className='flex justify-center text-3xl mt-3 '><AiTwotonePhone className="text-blue-900" style={{marginRight:"3"}} size={35} />+48 731185100</p>
           </div>
           <div className='my-4'>
             <div className='mb-2 grid grid-cols-1 place-items-center'>

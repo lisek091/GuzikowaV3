@@ -10,8 +10,6 @@
 }
 .cardBackground1 {
     background-image: url("../utils/13cut.jpeg");
-    min-width: 130px;
-    min-height: 50px;
     background-size: cover;
     background-position: center
 }
