@@ -17,7 +17,7 @@ const Work = () =>{
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center">
             <ServiceCard Przycisk="Okna aluminiowe" Background="cardBackground2" Tytul="Okna aluminiowe" Opis="Są bardzo wytrzymałe i odporne na uszkodzenia mechaniczne oraz warunki atmosferyczne, takie jak wiatr, deszcz czy słońce."/>
-            <ServiceCard Przycisk="Okna plastikowe" Background="cardBackground1" Tytul="Okna plastikowe" Opis="Posiadają dobrą izolacyjność termiczną i akustyczną, co wpływa na zmniejszenie kosztów ogrzewania oraz zapewnia cichsze warunki wewnątrz budynku."/>
+            <ServiceCard Przycisk="Okna PCV" Background="cardBackground1" Tytul="Okna PCV" Opis="Posiadają dobrą izolacyjność termiczną i akustyczną, co wpływa na zmniejszenie kosztów ogrzewania oraz zapewnia cichsze warunki wewnątrz budy"/>
             <ServiceCard Przycisk="Usługi" Background="cardBackground1" Tytul="Usługi" Opis="Zamówienie naszych usług montażowych jest bardzo proste. Wystarczy skontaktować się z nami za pomocą formularza kontaktowego na naszej stronie internetowej lub telefonicznie."/>
         </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ProduktList from './ProduktList';
 interface MobileMenuProps {
   visible?: boolean;
 }
@@ -13,10 +13,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ visible }) => {
     <div className="bg-slate-300 w-52 absolute top-8 left-0 py-5 flex-col border-2 flex opacity-90 border-zinc-800 rounded-3xl " id="mobile-menu">
       <div className="flex flex-col gap-4">
         <div className="px-3 text-center text-black hover:underline">
-        MD1
-        </div>
-        <div className="px-3 text-center text-black hover:underline">
-        Produkcja stolarki
+          Produkty
         </div>
         <div className="px-3 text-center text-black hover:underline">
         Usługi budowlane

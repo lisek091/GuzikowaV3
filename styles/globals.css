@@ -9,17 +9,17 @@
     background-size: cover;
 }
 .cardBackground1 {
-    background-image: url("../utils/13cut.jpeg");
+    background-image: url("../utils/tlo1.jpg");
     background-size: cover;
     background-position: center
 }
 .cardBackground2 {
-    background-image: url("../utils/11cut.jpeg");
+    background-image: url("../utils/tlo2.jpg");
     background-size: cover;
     background-position: center
 }
 .supply1{
-    background-image: url("../utils/gealanb.jpg");
+    background-image: url("../utils/gealanb.jpg");  
     background-size: cover;
 }
 .supply2{
@@ -30,3 +30,12 @@
     background-image: url("../utils/ponzio.jpg");
     background-size: cover;
 }
+.produktOkno1{
+    background-image: url("../utils/PE78NHI_okno.jpg");
+    background-size: cover;
+}
+.produktSystemprzesuwny1{
+    background-image: url("../utils/SL1600TTHI_szyba3k.jpg");
+    background-size: cover;
+}
+
