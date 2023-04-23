@@ -5,7 +5,7 @@ import Navbar from '@/components/navbar/Navbar'
 import React,{useState} from 'react'
 
 const uslugi = () => {
-  const [vision,setVision] = useState("")
+  /*
   const ProductShow = () =>{
     if(vision==="" || vision==="Okna" || vision===undefined){
       return <Produkt ProductName='Ponzio PE78N / PE78NHI' ProductDescription='System o trzykomorowej konstrukcji profili z rowkiem okuciowym w standardzie Euro oraz rowkiem okuciowym stosowanym w oknach i drzwiach balkonowych z profili PVC lub drewnianych. Jest przeznaczony do konstrukcji okien o bardzo wysokich wymogach izolacyjności termicznej.' ImageClass='produktOkno1'/>
@@ -14,6 +14,7 @@ const uslugi = () => {
       return <Produkt ProductName='Ponzio SL1600TTHI' ProductDescription='Wariant systemu podnoszono-przesuwnego SL1600tt przeznaczony do wykonywania konstrukcji o szczególnie wysokich wymaganiach dotyczących izolacyjności termicznej.' ImageClass='produktSystemprzesuwny1'/>
     }
   }
+  */
   return (
     <>
       <Navbar/>
