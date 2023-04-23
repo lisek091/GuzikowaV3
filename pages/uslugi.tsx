@@ -5,7 +5,7 @@ import Navbar from '@/components/navbar/Navbar'
 import React,{useState} from 'react'
 
 const uslugi = () => {
-  const [vision,setvision] = useState("")
+  const [vision,setVision] = useState("")
   const ProductShow = () =>{
     if(vision==="" || vision==="Okna" || vision===undefined){
       return <Produkt ProductName='Ponzio PE78N / PE78NHI' ProductDescription='System o trzykomorowej konstrukcji profili z rowkiem okuciowym w standardzie Euro oraz rowkiem okuciowym stosowanym w oknach i drzwiach balkonowych z profili PVC lub drewnianych. Jest przeznaczony do konstrukcji okien o bardzo wysokich wymogach izolacyjności termicznej.' ImageClass='produktOkno1'/>
@@ -26,17 +26,17 @@ const uslugi = () => {
         <div>
           <div className='text-2xl font-semibold'>Produkty</div>
           <br/>
-          <p className='hover:underline hover:cursor-pointer text-xl' onClick={()=>setvision("Okna")}>Okna</p>
-          <p className='hover:underline hover:cursor-pointer text-xl'onClick={()=>setvision("Systemy przesuwne")}>Systemy przesuwne</p>
+          <p className='hover:underline hover:cursor-pointer text-xl' >Okna</p>
+          <p className='hover:underline hover:cursor-pointer text-xl'>Systemy przesuwne</p>
           <p className='hover:underline hover:cursor-pointer text-xl'>Drzwi</p>
           <p className='hover:underline hover:cursor-pointer text-xl'>Ochrona przeciwsloneczna</p>
         </div>
         <div className='w-full mt-36'>
-          <ProductShow/>
         </div>
       </div>
     </>
   )
 }
+//<ProductShow/>
 
 export default uslugi
