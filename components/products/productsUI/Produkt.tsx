@@ -2,8 +2,8 @@ import React from 'react'
 
 interface ProduktProps {
     ProductName:string;
-    ProductDescription:string;
-    ImageClass:string;
+    ProductDescription?:string;
+    ImageClass?:string;
 }
 
 const Produkt:React.FC<ProduktProps> = ({ProductName,ProductDescription,ImageClass}) => {

@@ -2,11 +2,11 @@ import ServiceCard from "./ServiceCard"
 
 const Work = () =>{
     return (
-    <div>
+    <div className="dark:text-white">
         <div className="flex justify-between">
             <div className="hidden md:block w-36 lg:w-96"></div>
             <div className=''>
-                <h1 className="text-2xl text-center font-semibold text-blue-900 mb-2">Usługi</h1>
+                <h1 className="text-2xl text-center font-semibold text-blue-900 dark:text-blue-700 mb-2">Usługi</h1>
                 <p className="mx-4">Oferujemy szeroki zakres usług związanych z montażem okien.
                 Nasz zespół jest w stanie zamontować okna w każdym rodzaju budynku, bez względu na jego wielkość i rodzaj.
                 Dbamy o to, aby montaż był przeprowadzony zgodnie z najwyższymi standardami, co gwarantuje nie tylko estetyczny wygląd, ale także wysoką izolacyjność termiczną i akustyczną.

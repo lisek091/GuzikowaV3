@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .logoBackground {
-    background-image: url("../utils/logomd1.png");
-    min-width: 130px;
-    min-height: 50px;
-    background-size: cover;
+    background-image: url("../utils/logo1.8.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 .cardBackground1 {
     background-image: url("../utils/tlo1.jpg");

@@ -18,7 +18,7 @@ const ContactForm = () => {
         <Input id='email' label='Email' onChange={(e: any) => setemail(e.target.value)} value={email} type='email' />
       </div>
       <div className='block mx-6 '>
-        <textarea style={{resize:"none"}} id="opis" rows={8} cols={50} placeholder='Opis problemu - FUNKCJA NIE DZIAŁA' className='border-2 border-black mt-14' disabled/>
+        <textarea style={{resize:"none"}} id="opis" rows={8} cols={50} placeholder='Opis problemu - FUNKCJA NIE DZIAŁA' className='border-2 border-black mt-14 dark:text-black' disabled/>
         <div className='flex'>
           <input type='checkbox' className='mr-3'></input>
           <p>Zgoda na otrzymanie wiadomości zwrotnej</p>
