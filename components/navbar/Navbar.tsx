@@ -65,7 +65,7 @@ const Navbar:React.FC = () => {
   else{
     
     return (
-      <nav className="w-full fixed z-40 xl:flex xl:justify-center dark:text-white">
+      <nav className="w-full fixed z-40 xl:flex xl:justify-center ">
       <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-zinc-200 bg-opacity-90' : ''}`}>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-4 cursor-pointer relative">
           <p className="text-black text-sm">Przeglądaj</p>

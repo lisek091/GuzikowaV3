@@ -121,7 +121,7 @@ const PageWraper = () => {
 <ProductProvider>
     <Navbar/>
       <div className=''>
-        <div className="bg-slate-100 dark:bg-gray-900">
+        <div className="bg-slate-100">
         <div className='h-20 text-white'>.</div>
         <div className='h-32 border-t-2 border-b-2 border-blue-500 text-3xl flex justify-start'>
           <div className='w-1/6'></div>

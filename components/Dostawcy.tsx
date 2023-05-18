@@ -2,7 +2,7 @@ import React from 'react'
 
 const Dostawcy = () => {
   return (
-    <div className='my-6 dark:text-white'>
+    <div className='my-6 '>
         <div className='flex justify-center text-4xl my-4'>
             Nasi dostawcy usług
         </div>

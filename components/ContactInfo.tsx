@@ -3,7 +3,7 @@ import {AiOutlineMail,AiTwotonePhone} from 'react-icons/ai'
 import ContactForm from './ContactForm'
 const ContactInfo = () => {
   return (
-    <div className='m-8 xl:flex justify-center dark:text-white'>
+    <div className='m-8 xl:flex justify-center '>
       <div className=''>
         <div className='lewo info o firmie'>
           <h3 className='flex justify-center text-4xl'> Zapraszamy do</h3>
