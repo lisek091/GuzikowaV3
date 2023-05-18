@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-const Pe78 = () => {
+const Pe78nhl = () => {
 
   const [select,setSelect] = useState(true)
   const handleClick = () =>{
@@ -84,4 +84,4 @@ const Pe78 = () => {
   )
 }
 
-export default Pe78
+export default Pe78nhl
