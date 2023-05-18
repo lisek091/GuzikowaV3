@@ -38,7 +38,7 @@ const cardData = [
       },
   ];
 
-const okna = () => {
+const Okna = () => {
 
     const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
@@ -102,4 +102,4 @@ const okna = () => {
   )
 }
 
-export default okna
+export default Okna
