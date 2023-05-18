@@ -6,13 +6,9 @@ import MobileMenu from './MobileMenu';
 import NavbarItem from './NavbarItem';
 import ContactBar from './ContactBar';
 
-interface theme {
-  theme:string | undefined,
-  setTheme?:any,
-}
 
 const TOP_OFFSET = 66;
-const Navbar:React.FC<theme> = ({ theme, setTheme }) => {
+const Navbar:React.FC = () => {
   const router = useRouter();
   
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -70,7 +66,7 @@ const Navbar:React.FC<theme> = ({ theme, setTheme }) => {
     
     return (
       <nav className="w-full fixed z-40 xl:flex xl:justify-center dark:text-white">
-      <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? `${theme ? 'bg-zinc-200 bg-opacity-90' : 'bg-zinc-700 bg-opacity-90' }` : ''}`}>
+      <div className={`px-4 md:px-16 py-6 flex flex-row items-center transition duration-500 ${showBackground ? 'bg-zinc-200 bg-opacity-90' : ''}`}>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-4 cursor-pointer relative">
           <p className="text-black text-sm">Przeglądaj</p>
           <BsChevronDown className={`w-4 text-black fill-black transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />

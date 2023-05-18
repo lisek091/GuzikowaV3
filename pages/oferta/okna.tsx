@@ -53,7 +53,7 @@ const Okna = () => {
   return (
     <>
     <div className='bg-slate-100'>
-    <Navbar theme={undefined}/>
+    <Navbar/>
     <div className='p-4'>
         <div className='text-white mt-20'>.</div>
         <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1 mx-2 sm:mx-4 lg:mx-0 lg:ml-6">
