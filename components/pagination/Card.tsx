@@ -3,7 +3,7 @@ import {AiOutlineArrowLeft} from 'react-icons/ai'
 
 const Card = ()=>{
     return(
-        <div className="flex flex-row justify-between" style={{height:"620px"}}>
+        <div className="flex flex-row justify-between text-white" style={{height:"620px"}}>
             <div id="left" className="hidden sm:flex sm:w-1/12 items-center justify-start"></div>
             <div id='center' className="w-full cardBackground2">
                 <div className="h-3/4 sm:h-3/5"></div>
