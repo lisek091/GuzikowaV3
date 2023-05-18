@@ -119,7 +119,7 @@ const PageWraper = () => {
   return (
 <>
 <ProductProvider>
-    <Navbar theme=''/>
+    <Navbar/>
       <div className=''>
         <div className="bg-slate-100 dark:bg-gray-900">
         <div className='h-20 text-white'>.</div>
