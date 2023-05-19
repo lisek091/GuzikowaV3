@@ -15,14 +15,13 @@ const Card: React.FC<CardProps> = ({ children, hovered, onMouseEnter, onMouseLea
 
   return (
     <div
-      className={`bg-white rounded-lg shadow-lg transition-all duration-300 bg-bottom bg-contain bg-no-repeat cursor-pointer ${
-        hovered ? 'w-full h-[32rem]' : 'w-96 h-64'
+      className={`bg-transparent rounded-lg shadow-2xl transition-all duration-300 cursor-pointer w-full ${
+        hovered ? 'h-96' : 'h-64'
       }`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      style={cardStyle}
     >
-      <div className="p-1">
+      <div className="p-6">
         {children}
       </div>
     </div>

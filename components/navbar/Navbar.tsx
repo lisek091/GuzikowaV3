@@ -46,10 +46,10 @@ const Navbar:React.FC = () => {
         </div>
         <div className="flex-row ml-8 gap-7 hidden lg:flex">
           <NavbarItem label="Strona główna" link='/'/>
-          <NavbarItem label="Okna" />
-          <NavbarItem label="Usługi budowlane" />
-          <NavbarItem label="Systemy przesuwne" />
-          <NavbarItem label="Drzwi" />
+          <NavbarItem label="Okna" link='/oferta/okna'/>
+          <NavbarItem label="Usługi budowlane" link='/oferta/uslugibudowlane'/>
+          <NavbarItem label="Systemy przesuwne" link='/oferta/systemy' />
+          <NavbarItem label="Produkty" link='/oferta/uslugi'/>
           <NavbarItem label="Ochrona przeciwsloneczna" />
         </div>
         <ContactBar/>
@@ -75,7 +75,7 @@ const Navbar:React.FC = () => {
         <div className="flex-row ml-8 gap-7 hidden lg:flex"> 
           <NavbarItem label="Okna" link='/oferta/okna'/>
           <NavbarItem label="Usługi budowlane" link='/oferta/uslugibudowlane'/>
-          <NavbarItem label="Systemy" link='/oferta/systemy'/>
+          <NavbarItem label="Systemy przesuwne" link='/oferta/systemy'/>
           <NavbarItem label="Produkty" link='/oferta/uslugi'/>
           <NavbarItem label="Przykładowe realizacje" />
           <NavbarItem label="Pomoc/kontakt" />

@@ -6,7 +6,7 @@ const Pe96 = () => {
     setSelect(!select)
   }
 
-  const backgroundImagePE78 = "/PE78N_okno_RC4.jpg"
+  const backgroundImagePE78 = "/PE96.png"
   const cardStyle = {
     backgroundImage: `url(${backgroundImagePE78})`,
   };

@@ -6,14 +6,14 @@ const Pe78 = () => {
     setSelect(!select)
   }
 
-  const backgroundImagePE78 = "/PE78N_okno_RC4.jpg"
+  const backgroundImagePE78 = "/PE78N.png"
   const cardStyle = {
     backgroundImage: `url(${backgroundImagePE78})`,
   };
   return (
     <div id='wraper' >
-      <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 '>
-            <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-auto mt-32'></div>
+      <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 '>
+            <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-[32rem] mt-32'></div>
           <div>
             <div className='flex justify-center'>
               <button onClick={handleClick} className={`mx-8 my-2 ${select ? "underline font-semibold":""}`}>CHARAKTERYSTYKA</button>
