@@ -82,20 +82,20 @@ const Okna = () => {
             ))}
         </div>
       </div>
-        <div id='PE78' className='mt-12'>
+        <div id='PE78' className=''>
             <p className='text-4xl justify-center flex'>Okna PE78N</p>
             <Pe78/>
         </div>
-        <div id='PE78NHL' className='mt-12'>
+        <div id='PE78NHL' className=''>
             <p className='text-4xl justify-center flex'>Okna PE78NHL</p>
             <Pe78nhl/>
         </div>
-        <div id='PE78NSLIM' className='mt-12'>
-            <p className='text-4xl justify-center flex'>Okna PE78N</p>
+        <div id='PE78NSLIM' className=''>
+            <p className='text-4xl justify-center flex'>Okna PE78NSLIM</p>
             <Pe78nslim/>
         </div>
-        <div id='PE96' className='mt-12'>
-            <p className='text-4xl justify-center flex'>Okna PE78N</p>
+        <div id='PE96' className=''>
+            <p className='text-4xl justify-center flex'>Okna PE96</p>
             <Pe96/>
         </div>
     </div>

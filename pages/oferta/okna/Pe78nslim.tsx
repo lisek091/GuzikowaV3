@@ -12,27 +12,21 @@ const Pe78nslim = () => {
   };
   return (
     <div id='wraper' >
-      <div className='grid sm:grid-cols-2 grid-cols-1 gap-4 '>
-            <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-auto mt-32'></div>
+      <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 '>
+            <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-[32rem] mt-8'></div>
           <div>
             <div className='flex justify-center'>
               <button onClick={handleClick} className={`mx-8 my-2 ${select ? "underline font-semibold":""}`}>CHARAKTERYSTYKA</button>
               <button onClick={handleClick} className={`mx-8 my-2  ${select ? "":"underline font-semibold"}`}>PARAMETRY TECHNICZNE</button>
             </div>
             {select ? (<div className='text-lg px-4'>
-                <p className='border-y-2 border-blue-300'>System o trzykomorowej konstrukcji przeznaczony do budowy ścianek stałych i okien o podwyższonej odporności na włamanie w klasie RC4.</p>
+                <p className='border-y-2 border-blue-300'>System o trzykomorowej konstrukcji z rowkiem okuciowym w standardzie euro.</p>
                 <ul className='list-disc'>
-                  <li className='my-2'>Posiada szereg zabezpieczeń utrudniających włamanie oraz wydłużających czas potrzebny do ich sforsowania m.in.:</li>
-                  <li className='ml-6 font-light'>wzmocniona konstrukcja kształtowników</li>
-                  <li className='ml-6 font-light'>wzmocnione listwy przyszybowe</li>
-                  <li className='ml-6 font-light'>klamkę z kluczem</li>
-                  <li className='ml-6 font-light'>zabezpieczenie przed rozwierceniem klamki i elementów napędowych okucia</li>
-                  <li className='border-y-2 border-blue-300 my-2'>brak konieczności stosowania krat lub rolet antywłamaniowych</li>
+                  <li className='my-2'>smukłe profile systemu PE78N slim zostały zaprojektowane z myślą o estetycznych wnętrzach z dużymi przeszkleniami</li>
+                  <li className='border-y-2 border-blue-300 my-2'>słupek ruchomy o szerokości 90mm doskonale wpisuje się w charakter systemu</li>
                   <li className='border-b-2 border-blue-300 my-2'>wysokość przylgi 10mm pozwala na zastosowanie okuć o zwiększonej wytrzymałości</li>
-                  <li className='border-b-2 border-blue-300 my-2'>zakres szklenia do 78mm pozwala na zastosowanie wytrzymałych pakietów szkła w klasie minimum P6B</li>
-                  <li className='border-b-2 border-blue-300 my-2'>szyba nie jest klejona do profili, co zdecydowanie ułatwia i przyspiesza montaż konstrukcji</li>
-                  <li className='border-b-2 border-blue-300 my-2'>wysoka izolacyjność termiczna Uw do 0,9 W/m2K</li>
-                  <li className='my-2'>wizualnie okno nie różni się od okna bezklasowego, co korzystnie wpływa na estetykę wyglądu całego budynku</li>
+                  <li className='border-b-2 border-blue-300 my-2'>możliwość zlicowania skrzydeł okien z ościeżnicą (jedna płaszczyzna po stronie zewnętrznej)</li>
+                  <li className='my-2'>różne warianty izolacyjności termicznej, w zależności od zastosowanych wkładów izolacyjnych: PE78N, PE78N+, PE78NHI</li>
                 </ul>
                 <div className='mt-28'></div>
             </div>) :  (<div className='px-4'>
@@ -44,28 +38,31 @@ const Pe78nslim = () => {
                   <p className="font-light">z kauczuku syntetycznego EPDM wg normy PN-EN 12365-1 oraz z TPE wg DIN 16941R3</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Głębokość ościeżnicy
-                  <p className="font-light">PE68 - 96mm, PE78N - 106mm</p>
+                  <p className="font-light">96 mm</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Głębokość skrzydła
-                  <p className="font-light">PE68 - 106mm, PE78N - 116mm</p>
+                  <p className="font-light">106 mm</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Maksymalne wymiary skrzydła
-                  <p className="font-light">L 1400 x H 2200 mm</p>
+                  <p className="font-light">L 1700 x H 2300 mm, L1400 x H 2800 mm</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Maksymalna waga skrzydła
-                  <p className="font-light">170 kg</p>
+                  <p className="font-light">180 kg</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Wypełnienia
-                  <p className="font-light">szyby zespolone o grubości: ościeżnica: 41 - 68 mm, skrzydło: 51 - 78 mm</p>
+                  <p className="font-light">Szyby pojedyncze, zespolone lub panele nieprzezierne o grubość: ościeżnica: 39 - 62 mm, skrzydło: 39 - 74 mm</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Przepuszczalność powietrza
                   <p className="font-light">klasa 4</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Wodoszczelność
-                  <p className="font-light">klasa E1500</p>
+                  <p className="font-light">klasa E1950</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Odporność na obciążenie wiatrem
                   <p className="font-light">klasa C5</p>
+                  </li>
+                  <li className='border-b-2 border-blue-300'>Izolacyjność termiczna
+                  <p className="font-light">Uf od 0,82 W/m2K, Uw = 0,66 W/m2K (obliczono dla okna: L 1480 x H 2180 mm, Ug = 0,5 W/m2K, szyba dwukomorowa).</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Sposoby wykończenia powierzchni
                   <p className="font-light">Malowanie proszkowe farbami poliestrowymi spełniające wymogi Qualicoat, do wyboru kolory z palety RAL; anodowanie naturalne i w kolorach - spełniające wymogi Qualanod; lakierowanie na „kolor” drewna - wykończenie powierzchni spełnia wysokie wymagania antykorozyjne.</p>

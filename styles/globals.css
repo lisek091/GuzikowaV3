@@ -6,7 +6,6 @@
     background-image: url("../utils/logo1.8.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-
 }
 .cardBackground1 {
     background-image: url("../utils/tlo1.jpg");
@@ -31,4 +30,19 @@
     background-size: cover;
 }
 
+.serviceCard1 {
+    background-image: url("../public/wallpapper1.jpg");
+    background-size: cover;
+    background-position: center
+}
+.serviceCard2 {
+    background-image: url("../public/wallpapper2.jpg");
+    background-size: cover;
+    background-position: center
+}
+.serviceCard3 {
+    background-image: url("../public/wallpapper3.jpg");
+    background-size: cover;
+    background-position: center
+}
 

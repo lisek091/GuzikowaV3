@@ -7,9 +7,15 @@ const Dostawcy = () => {
             Nasi dostawcy usług
         </div>
         <div className='grid grid-cols-1 gap-4 place-items-center lg:flex lg:justify-center'>
-            <div className="supply1 h-24 w-60 mx-4"/>
-            <div className="supply2 h-24 w-60 mx-4"/>
-            <div className="supply3 h-20 w-60 mx-4"/>
+        <a href='https://gealan.pl/' target='_blank'>
+            <div className="supply1 h-24 w-60 mx-4 hover:cursor-pointer"/>
+        </a>
+            <a href='https://www.decco.eu/' target='_blank'>
+            <div className="supply2 h-24 w-60 mx-4 hover:cursor-pointer"/>
+            </a>
+               <a href='https://www.ponzio.pl/' target='_blank'>
+            <div className="supply3 h-20 w-60 mx-4 hover:cursor-pointer"/>
+               </a>
         </div>
     </div>
   )

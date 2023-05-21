@@ -13,7 +13,7 @@ const Pe78 = () => {
   return (
     <div id='wraper' >
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 '>
-            <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-[32rem] mt-32'></div>
+            <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-[32rem] mt-8'></div>
           <div>
             <div className='flex justify-center'>
               <button onClick={handleClick} className={`mx-8 my-2 ${select ? "underline font-semibold":""}`}>CHARAKTERYSTYKA</button>
@@ -66,6 +66,9 @@ const Pe78 = () => {
                   </li>
                   <li className='border-b-2 border-blue-300'>Odporność na obciążenie wiatrem
                   <p className="font-light">klasa C5</p>
+                  </li>
+                  <li className='border-b-2 border-blue-300'>Izolacyjność termiczna
+                  <p className="font-light">Uf ab 1,7 W/m2K, Ud = 0,79 W/m2K (obliczono dla drzwi: L 1230 x H 2180 mm, Ug = 0,45 W/m2K, panel izolacyjny).</p>
                   </li>
                   <li className='border-b-2 border-blue-300'>Sposoby wykończenia powierzchni
                   <p className="font-light">Malowanie proszkowe farbami poliestrowymi spełniające wymogi Qualicoat, do wyboru kolory z palety RAL; anodowanie naturalne i w kolorach - spełniające wymogi Qualanod; lakierowanie na „kolor” drewna - wykończenie powierzchni spełnia wysokie wymagania antykorozyjne.</p>
