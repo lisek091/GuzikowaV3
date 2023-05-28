@@ -6,6 +6,7 @@ import Pe78nhl from './okna/Pe78nhl';
 import Pe78nslim from './okna/Pe78nslim';
 import Pe96 from './okna/Pe96';
 import Footer from '@/components/Footer';
+import FooterContact from '@/components/FooterContact';
 //600x1200px rozmiar obrazu
 const cardData = [
     {
@@ -99,6 +100,7 @@ const Okna = () => {
             <Pe96/>
         </div>
     </div>
+    <FooterContact/>
     <Footer/>
     </div>
     </>

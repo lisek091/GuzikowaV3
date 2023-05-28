@@ -38,7 +38,7 @@ const Navbar:React.FC = () => {
   if(router.pathname !== '/'){
     return (
       <nav className="w-full fixed z-40 xl:flex xl:justify-center ">
-      <div className={`px-4 md:px-16 py-6 flex flex-row items-center justify-center transition duration-500 ${showBackground ? 'bg-zinc-200 bg-opacity-90' : ''}`}>
+      <div className={`px-2 md:px-12 py-2 flex flex-row items-center justify-center transition duration-500 ${showBackground ? 'bg-zinc-200 bg-opacity-90' : ''}`}>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-4 cursor-pointer relative">
           <p className="text-black text-sm">Przeglądaj</p>
           <BsChevronDown className={`w-4 text-black fill-black transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
@@ -66,7 +66,7 @@ const Navbar:React.FC = () => {
     
     return (
       <nav className="w-full fixed z-40 xl:flex xl:justify-center ">
-      <div className={`px-4 md:px-16 py-6 flex flex-row items-center justify-center transition duration-500 ${showBackground ? 'bg-zinc-200 bg-opacity-90' : ''}`}>
+      <div className={`px-2 md:px-12 py-2 flex flex-row items-center justify-center transition duration-500 ${showBackground ? 'bg-zinc-200 bg-opacity-90' : ''}`}>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-4 cursor-pointer relative">
           <p className="text-black text-sm">Przeglądaj</p>
           <BsChevronDown className={`w-4 text-black fill-black transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />

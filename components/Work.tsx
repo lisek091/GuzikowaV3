@@ -18,7 +18,7 @@ const Work = () =>{
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-items-center">
             <ServiceCard link={"./oferta/okna"} Przycisk="Okna" Background="serviceCard1" Tytul="Okna" Opis="Są bardzo wytrzymałe i odporne na uszkodzenia mechaniczne oraz warunki atmosferyczne, takie jak wiatr, deszcz czy słońce."/>
             <ServiceCard link={"./oferta/uslugibudowlane"} Przycisk="Usługi budowlane" Background="cardBackground2" Tytul="Usługi budowlane" Opis="Zamówienie naszych usług montażowych jest bardzo proste. Wystarczy skontaktować się z nami za pomocą formularza kontaktowego na naszej stronie internetowej lub telefonicznie."/>
-            <ServiceCard link={"./oferta/systemy"} Przycisk="Systemy przesuwne" Background="serviceCard3" Tytul="Systemy przesuwne" Opis="Najwyższej jakościu produkty. Więcej informacji wkrótce."/>
+            <ServiceCard link={"./oferta/systemy"} Przycisk="Systemy przesuwne" Background="serviceCard3" Tytul="Systemy przesuwne" Opis="Najwyższej jakości produkty. Więcej informacji wkrótce."/>
             <ServiceCard link={"./oferta/uslugi"} Przycisk="Ochrona przeciwsłoneczna" Background="serviceCard2" Tytul="Ochrona przeciwsłoneczna" Opis="Najwyższej jakościu produkty. Więcej informacji wkrótce."/>
         </div>
     </div>

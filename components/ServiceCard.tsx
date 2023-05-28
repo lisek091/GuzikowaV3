@@ -17,7 +17,7 @@ const ServiceCard:React.FC<ServiceCardProps> = ({Przycisk,Tytul,Opis,Background,
           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 ">{Tytul}</h5>
           <p className="font-normal text-gray-700 h-28">{Opis}</p>
             <Link href={link} className=''>
-              <button className='bg-orange-700 text-white w-36 h-8 rounded-xl'>{Przycisk}</button>
+              <button className='bg-orange-700 text-white w-52 h-8 rounded-full'>{Przycisk}</button>
             </Link>
       </div>
     </div>
