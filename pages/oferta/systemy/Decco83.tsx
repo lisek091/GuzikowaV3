@@ -1,11 +1,11 @@
 import Footer from '@/components/Footer'
-import Navbar from '@/components/navbar/Navbar'
 import React from 'react'
 import {CiSliderHorizontal} from 'react-icons/ci'
 import {GiGreenhouse,GiHeatHaze} from 'react-icons/gi'
 import {BsHouseCheck} from "react-icons/bs"
 import {AiOutlineVerticalAlignMiddle} from 'react-icons/ai'
 import FooterContact from '@/components/FooterContact'
+import Nav from '@/components/noweWersje/nav/Nav'
 const Decco83 = () => {
     const backgroundImage = "/83.png"
     const cardStyle = {
@@ -14,7 +14,7 @@ const Decco83 = () => {
   return (
     <>
     <div className='bg-slate-100'>
-        <Navbar/>
+        <Nav/>
         <div className='text-slate-100'>.</div> 
         <div className='text-white mt-10'>.</div>
         <p className='text-center text-3xl'>Zalety DECCO 83</p>

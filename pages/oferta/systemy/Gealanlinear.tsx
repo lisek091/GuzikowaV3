@@ -1,11 +1,11 @@
 import Footer from '@/components/Footer'
-import Navbar from '@/components/navbar/Navbar'
 import React from 'react'
 import {GiWindow} from 'react-icons/gi'
 import {BsHouseCheck,BsFillHouseHeartFill} from "react-icons/bs"
 import {TbTriangleSquareCircle} from 'react-icons/tb'
 import {MdRecycling} from 'react-icons/md'
 import FooterContact from '@/components/FooterContact'
+import Nav from '@/components/noweWersje/nav/Nav'
 const Gealanlinear = () => {
     const backgroundImage = "/GEALAN-Linear2.png"
     const cardStyle = {
@@ -14,7 +14,7 @@ const Gealanlinear = () => {
   return (
     <>
     <div className='bg-slate-100'>
-        <Navbar/>
+        <Nav/>
         <div className='text-slate-100'>.</div> 
         <div className='text-white mt-10'>.</div>
         <p className='text-center text-3xl'>Zalety GEALAN-LINEAR®</p>
