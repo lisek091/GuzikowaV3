@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'
-import Navbar from '@/components/navbar/Navbar'
+import Nav from '@/components/noweWersje/nav/Nav';
 import React from 'react'
 import Link from 'next/link'
 
@@ -23,7 +23,7 @@ const systemy = () => {
   return (
     <>
     <div className='bg-slate-100'>
-      <Navbar/>
+      <Nav/>
       <div className='text-slate-100'>.</div> 
       <div className='text-white mt-10'>.</div>
       <Link href={"/oferta/systemy/S9000"}>

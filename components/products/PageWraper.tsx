@@ -1,5 +1,5 @@
 import React,{useState,createContext} from 'react'
-import Navbar from '@/components/navbar/Navbar'
+import Nav from '@/components/noweWersje/nav/Nav';
 import Produkt from './productsUI/Produkt'
 import ProductMenu from './ProductMenu'
 import VerticalMenu from './VerticalMenu';
@@ -119,7 +119,7 @@ const PageWraper = () => {
   return (
 <>
 <ProductProvider>
-    <Navbar/>
+    <Nav/>
       <div className=''>
         <div className="bg-slate-100">
         <div className='h-20 text-white'>.</div>

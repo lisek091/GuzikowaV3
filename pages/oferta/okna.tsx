@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Card from '@/components/products/productsUI/Card'
-import Navbar from '@/components/navbar/Navbar';
+import Nav from '@/components/noweWersje/nav/Nav';
 import Pe78 from './okna/Pe78';
 import Pe78nhl from './okna/Pe78nhl';
 import Pe78nslim from './okna/Pe78nslim';
@@ -54,7 +54,7 @@ const Okna = () => {
   return (
     <>
     <div className='bg-slate-100'>
-    <Navbar/>
+    <Nav/>
     <div className='p-4'>
         <div className='text-white mt-20'>.</div>
         <div className='hidden lg:block'>
