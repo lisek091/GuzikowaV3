@@ -2,8 +2,8 @@ import React from 'react'
 
 const Dostawcy = () => {
   return (
-    <div className='my-1 bg-white bg-opacity-70'>
-        <div className='flex justify-center text-4xl my-4'>
+    <div className=' bg-white bg-opacity-70'>
+        <div className='flex justify-center text-4xl my-1'>
             Nasi dostawcy usług
         </div>
         <div className='grid grid-cols-1 gap-4 place-items-center lg:flex lg:justify-center'>

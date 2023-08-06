@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/mainpage/Footer'
 import Nav from '@/components/noweWersje/nav/Nav';
 import React from 'react'
 import Link from 'next/link'

@@ -5,8 +5,8 @@ import Pe78 from './okna/Pe78';
 import Pe78nhl from './okna/Pe78nhl';
 import Pe78nslim from './okna/Pe78nslim';
 import Pe96 from './okna/Pe96';
-import Footer from '@/components/Footer';
-import FooterContact from '@/components/FooterContact';
+import Footer from '@/components/mainpage/Footer';
+import FooterContact from '@/components/mainpage/FooterContact';
 //600x1200px rozmiar obrazu
 const cardData = [
     {

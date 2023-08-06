@@ -1,10 +1,10 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/mainpage/Footer'
 import React from 'react'
 import {CiSliderHorizontal} from 'react-icons/ci'
 import {GiGreenhouse,GiHeatHaze} from 'react-icons/gi'
 import {BsHouseCheck} from "react-icons/bs"
 import {AiOutlineVerticalAlignMiddle} from 'react-icons/ai'
-import FooterContact from '@/components/FooterContact'
+import FooterContact from '@/components/mainpage/FooterContact'
 import Nav from '@/components/noweWersje/nav/Nav'
 const S9000 = () => {
     const backgroundImage = "/gealan-futura.png"

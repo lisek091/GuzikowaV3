@@ -1,10 +1,10 @@
-import Footer from '@/components/Footer'
+import Footer from '@/components/mainpage/Footer'
 import React from 'react'
 import {GiWindow} from 'react-icons/gi'
 import {BsHouseCheck,BsFillHouseHeartFill} from "react-icons/bs"
 import {TbTriangleSquareCircle} from 'react-icons/tb'
 import {MdRecycling} from 'react-icons/md'
-import FooterContact from '@/components/FooterContact'
+import FooterContact from '@/components/mainpage/FooterContact'
 import Nav from '@/components/noweWersje/nav/Nav'
 const Gealanlinear = () => {
     const backgroundImage = "/GEALAN-Linear2.png"

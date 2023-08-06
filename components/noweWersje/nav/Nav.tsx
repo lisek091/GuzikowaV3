@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Nav = () => {
     
     const linksMain =[
-      {name:"Kontakt",link:"/"},
+      {name:"Kontakt",link:"/Kontakt"},
       {name:"Przykładowe realizacje",link:"/"},
       {name:"Strona Główna ",link:"/"},
     ];
@@ -33,10 +33,9 @@ const Nav = () => {
       }, [open]);
 
   return (
-        <div className='shadow-md w-full fixed top-0 left-0' ref={navRef}>
+        <div className='shadow-md w-full fixed top-0 left-0 z-50' ref={navRef}>
             <div className='lg:flex items-center justify-between bg-white py-2 lg:px-10 px-4'>
-                <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-                text-gray-800'>
+                <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800'>
                     <Link  className='' href={"/"}>
                             <div className="h-14 w-48 mx-4 logoBackground"></div>
                     </Link>
@@ -46,7 +45,7 @@ const Nav = () => {
                     <IoMdMenu/>
                 </div>
 
-                <ul className={`lg:hidden lg:items-center lg:pb-0 pb-1 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-6 transition-all duration-600 ease-in ${open ? 'top-18 ':'top-[-490px]'}`}>
+                <ul className={`lg:hidden lg:items-center lg:pb-0 pb-1 absolute lg:static bg-white  left-0 w-full lg:w-auto lg:pl-0 pl-6 transition-all duration-600 ease-in ${open ? 'top-18 ':'top-[-490px]'}`}>
                     { menuOpen ?
                         <button onClick={()=>{setMenuList(offersMain); setMenuOpen(false)}} 
                         className='lg:ml-8 text-xl lg:my-0 text-gray-800 hover:text-gray-400 duration-500 flex pt-2'>
@@ -69,7 +68,7 @@ const Nav = () => {
                     <Link href={"/"}><button className='px-2 hover:underline'>Stolarka PCV</button></Link>
                     <Link href={"/"}><button className='px-2 hover:underline'>Stolarka aluminiowa</button></Link>
                     <Link href={"/"}><button className='px-2 hover:underline'>Usługi budowlane</button></Link>
-                    <Link href={"/"}><button className='px-2 hover:underline'>Kontakt</button></Link>
+                    <Link href={"/Kontakt"}><button className='px-2 hover:underline'>Kontakt</button></Link>
                     <Link href={"/"}><button className='px-2 hover:underline'>Przykładowe realizacje</button></Link>
                     <Link href={"/"}><button className='px-2 hover:underline'>Strona Główna</button></Link>
                     {

@@ -1,8 +1,8 @@
-import ContactInfo from "@/components/ContactInfo";
-import Description from "@/components/Description";
-import Dostawcy from "@/components/Dostawcy";
-import Footer from "@/components/Footer";
-import Work from "@/components/Work";
+import ContactInfo from "@/components/mainpage/ContactInfo";
+import Description from "@/components/mainpage/Description";
+import Dostawcy from "@/components/mainpage/Dostawcy";
+import Footer from "@/components/mainpage/Footer";
+import Work from "@/components/mainpage/Work";
 import Nav from "@/components/noweWersje/nav/Nav";
 export default function Home() {
   return (
