@@ -21,9 +21,8 @@ const Kontakt = () => {
                     </div>
                     <div className='w-2 lg:w-1/12'></div>
                     <div className='text-left text-lg md:text-2xl mt-4 w-5/12'>
-                        <h1 className="text-xl md:text-3xl">Naglowek</h1>
-                        <p>JAKIS TEKST ZACHECAJACY DO KONTAKTU GUZIK WYMYSL COS TAK ZEBY ZAJELO TYLE MIESJCA</p>
-                        <p>JAKIS TEKST ZACHECAJACY DO KONTAKTU GUZIK WYMYSL COS TAK ZEBY ZAJELO TYLE MIESJCA</p>
+                        <p>Zachęcamy do kontaktu z Nami jeżeli jesteś zainteresowany współpracą lub w przypadku, 
+                            gdy nasuwają Ci się dodatkowe pytania, na które nie uzyskałeś odpowiedzi odwiedzając Naszą stronę.</p>
                     </div>
                 </div>
                 <div className='bg-gradient-to-r from-orange-300 to-orange-50 h-[8rem] w-full hidden lg:block'>         
