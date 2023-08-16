@@ -2,7 +2,6 @@ import Nav from "@/components/noweWersje/nav/Nav"
 import React,{ useState } from "react"
 const uslugi = () => {
 
-  const [selected,setSelected] =  useState<null | string>(null)
   const okna = {
     PE96:{
       nazwa:"PE96",
@@ -19,10 +18,6 @@ const uslugi = () => {
     <>
       <Nav/>
       <div>
-        <div className="mt-12 opacity-0">.</div>
-        {Object.values(okna).map((okno)=>{
-          return <p>{okno.nazwa}</p>
-        })}
       </div>
     </>
   )
