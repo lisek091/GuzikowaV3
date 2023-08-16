@@ -1,7 +1,6 @@
 
 import React from 'react'
-import { OknaTypes,OknoItem } from "@/components/types"
-const ProductMenu = (ListaOkien:OknaTypes) => {
+const ProductMenu = () => {
 
     return(
 
