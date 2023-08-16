@@ -17,7 +17,7 @@ const ContactForm = () => {
     }
     const sendForm = (e:any)=>{
         e.preventDefault();
-        alert("Ta funckja jeszcze nie działa. Zapraszamy 15.08.23")
+        alert("Przepraszamy coś poszło nie tak. Prosimy o kontakt telefoniczny!")
     }
   return (
     <form onSubmit={sendForm} className='p-4 md:p-20'>
@@ -28,14 +28,14 @@ const ContactForm = () => {
             <Input id='phonenumber' label='Numer telefonu' onChange={change} value={form.phonenumber} type='tel' pattern="[0-9]{9}" />
         </div>
         <textarea 
-            className='w-full min-h-36 rounded-md my-2 px-6 pt-1 pb-1 text-xl text-black bg-neutral-200 appearance-none ocus:outline-none focus:ring-0 peer invalid:border-b-1'
+            className='w-full lg:w-3/4 xl:w-1/2 min-h-36 rounded-md my-2 px-6 pt-1 pb-1 text-xl text-black bg-neutral-200 appearance-none ocus:outline-none focus:ring-0 peer invalid:border-b-1'
             rows={4} cols={4} required={true} onChange={change} value={form.formarea} id="formarea"
             />
-        <label className='flex bg-white opacity-80'>
+        <label className='flex bg-white opacity-80 w-full lg:w-1/2'>
             <input id='permision' type='checkbox' required={true} className='w-3 mr-4 ml-1'/>
             <p>*Wyrażam zgodę na wykorzystywanie moich danych osobowych podanych w formularzu w celu kontaktu z przedstawicielem handlowym.</p>
         </label>
-        <p className='p-2 bg-white opacity-80'>* - Wymagane</p>
+        <p className='p-2 bg-white opacity-80 w-full lg:w-1/2'>* - Wymagane</p>
         <button type='submit' className='border-2 border-orange-900 bg-orange-600 w-28 h-16 ml-4 mt-4 hover:bg-orange-400'>Wyślij</button>
     </form>
   )
