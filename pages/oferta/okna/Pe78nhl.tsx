@@ -12,6 +12,7 @@ const Pe78nhl = () => {
   };
   return (
     <div id='wraper' >
+      <p className='text-4xl justify-center flex'>Okna PE78NHL</p>
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 '>
             <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-[32rem] mt-8'></div>
           <div>

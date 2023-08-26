@@ -40,24 +40,28 @@ const cardData = [
   ];
 
 const Okna = () => {
-
-    const [hoveredCard, setHoveredCard] = useState<number | null>(null);
-
-    const handleCardMouseEnter = (index: number) => {
-      setHoveredCard(index);
-    };
-  
-    const handleCardMouseLeave = () => {
-      setHoveredCard(null);
-    };
-
   return (
     <>
     <div className='bg-slate-100'>
     <Nav/>
     <div className='p-4'>
         <div className='text-white mt-20'>.</div>
-        <div className='hidden lg:block'>
+            <Pe78/>
+            <Pe78nhl/>
+            <Pe78nslim/>
+            <Pe96/>
+    </div>
+    <FooterContact/>
+    <Footer/>
+    </div>
+    </>
+  )
+}
+
+export default Okna
+
+/*
+<div className='hidden lg:block'>
             <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-1 mx-2 sm:mx-4 lg:mx-0 lg:ml-6 ">
             {cardData.map((card, index) => (
               <div className="max-h-[32rem] overflow-hidden mb-4" key={index}>
@@ -83,28 +87,5 @@ const Okna = () => {
             ))}
         </div>
       </div>
-        <div id='PE78' className=''>
-            <p className='text-4xl justify-center flex'>Okna PE78N</p>
-            <Pe78/>
-        </div>
-        <div id='PE78NHL' className=''>
-            <p className='text-4xl justify-center flex'>Okna PE78NHL</p>
-            <Pe78nhl/>
-        </div>
-        <div id='PE78NSLIM' className=''>
-            <p className='text-4xl justify-center flex'>Okna PE78NSLIM</p>
-            <Pe78nslim/>
-        </div>
-        <div id='PE96' className=''>
-            <p className='text-4xl justify-center flex'>Okna PE96</p>
-            <Pe96/>
-        </div>
-    </div>
-    <FooterContact/>
-    <Footer/>
-    </div>
-    </>
-  )
-}
-
-export default Okna
+      pozostalosc po eksperymencie 
+*/
