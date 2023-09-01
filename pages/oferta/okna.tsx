@@ -7,6 +7,9 @@ import Pe78nslim from './okna/Pe78nslim';
 import Pe96 from './okna/Pe96';
 import Footer from '@/components/mainpage/Footer';
 import FooterContact from '@/components/mainpage/FooterContact';
+import Pe50 from './okna/Pe50';
+import Pe68 from './okna/Pe68';
+import Pe78industrial from './okna/Pe78industrial';
 //600x1200px rozmiar obrazu
 const cardData = [
     {
@@ -46,7 +49,10 @@ const Okna = () => {
     <Nav/>
     <div className='p-4'>
         <div className='text-white mt-20'>.</div>
+            <Pe50/>
+            <Pe68/>
             <Pe78/>
+            <Pe78industrial/>
             <Pe78nhl/>
             <Pe78nslim/>
             <Pe96/>

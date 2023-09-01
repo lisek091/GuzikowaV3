@@ -31,7 +31,7 @@ const images = [
 
 const Realizacje = () => {
   return (
-    <div>
+    <div className="backgroundcoloraa">
         <Nav/>
         <br></br><br></br><br></br><br></br>
         <ImageGallery items={images} />;
