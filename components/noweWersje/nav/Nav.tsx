@@ -23,10 +23,10 @@ const Nav = () => {
         {name:"GEALAN S 9000",link:"/oferta/systemy/S9000"},
     ]
     const ALUList = [
-        {name:"PE50",link:"/"},
-        {name:"PE68/PE68HI",link:"/"},
+        {name:"PE50",link:"/oferta/okna/Pe50"},
+        {name:"PE68/PE68HI",link:"/oferta/okna/Pe68"},
         {name:"PE78NHI OKNA UCHYLNO-PRZESUWNE",link:"/oferta/okna/Pe78nhl"},
-        {name:"PE78N OKNA INDUSTRIAL",link:"/"},
+        {name:"PE78N OKNA INDUSTRIAL",link:"/oferta/okna/Pe78industrial"},
         {name:"PE78N OKNA SLIM",link:"/oferta/okna/Pe78nslim"},
         {name:"PE78N/PE78NHI",link:"/oferta/okna/Pe78"},
         {name:"PE96 PASSIVE",link:"/oferta/okna/Pe96"},
@@ -64,7 +64,7 @@ const Nav = () => {
                     </Link>
                 </div>
                 
-                <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer xl:hidden'>
+                <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer lg:hidden'>
                     <IoMdMenu/>
                 </div>
 
@@ -105,7 +105,7 @@ const Nav = () => {
                     
                     }
                 </ul>
-                <ul className={`hidden xl:flex items-center pb-0 static bg-white `}>
+                <ul className={`hidden lg:flex items-center pb-0 static bg-white `}>
                     <AnimatedMenu name="Okna PCV">
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline'>
                             <Link  href={"/oferta/systemy/Decco82"}>DECCO 82 </Link>
@@ -122,16 +122,16 @@ const Nav = () => {
                     </AnimatedMenu>
                     <AnimatedMenu name="Okna aluminiowe">
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline'>
-                            <Link  href={"/"}>PE50 </Link>
+                            <Link  href={"/oferta/okna/Pe50"}>PE50 </Link>
                         </p>
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline'>
-                            <Link  href={"/"}>PE68/PE68HI </Link>
+                            <Link  href={"/oferta/okna/Pe68"}>PE68/PE68HI </Link>
                         </p>
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline'>
                             <Link  href={"/oferta/okna/Pe78nhl"}>PE78NHI OKNA UCHYLNO PRZESUWNE </Link>
                         </p>
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline'>
-                          <Link  href={"/"}>PE78N OKNA INDUSTRIAL </Link>
+                          <Link  href={"/oferta/okna/Pe78industrial"}>PE78N OKNA INDUSTRIAL </Link>
                         </p>
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline'>
                             <Link  href={"/oferta/okna/Pe78nslim"}>PE78N OKNA SLIM </Link>

@@ -1,22 +1,22 @@
 import Nav from '@/components/noweWersje/nav/Nav'
 import React,{useState} from 'react'
-const Pe96 = () => {
+const Pe78industrial = () => {
 
   const [select,setSelect] = useState(true)
   const handleClick = () =>{
     setSelect(!select)
   }
 
-  const backgroundImagePE78 = "/PE96.png"
+  const backgroundImagePE78 = "/PE78NH.png"
   const cardStyle = {
     backgroundImage: `url(${backgroundImagePE78})`,
   };
   return (
-    <div className='bg-slate-100' >
-            <Nav/>
+    <div className='bg-slate-100'>
+      <Nav/>
         <div className='text-slate-100'>.</div> 
         <div className='text-white mt-10'>.</div>
-      <p className='text-4xl justify-center flex'>Okna PE96 Passive</p>
+      <p className='text-4xl justify-center flex'>Okna PE78N - okna industrial</p>
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 p-2'>
             <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-[32rem] mt-8'></div>
           <div>
@@ -25,13 +25,12 @@ const Pe96 = () => {
               <button onClick={handleClick} className={`mx-8 my-2  ${select ? "":"underline font-semibold"}`}>PARAMETRY TECHNICZNE</button>
             </div>
             {select ? (<div className='text-lg px-4'>
-                <p className='border-y-2 border-orange-700'>System o trzykomorowej konstrukcji profili z rowkiem okuciowym w standardzie Euro. Jest przeznaczony do konstrukcji okien o bardzo wysokich wymogach izolacyjności termicznej.</p>
+                <p className='border-y-2 border-orange-700'>System o trzykomorowej konstrukcji z rowkiem okuciowym w standardzie euro.</p>
                 <ul className='list-disc'>
-                  <li className='my-2'>wysoką izolacyjność termiczną gwarantują wielokomorowe przekładki termiczne o szerokości 62 mm oraz dwukomponentowa uszczelka centralna</li>
-                  <li className='border-y-2 border-orange-700 my-2'>możliwość wykonywania konstrukcji o dużych gabarytach</li>
-                  <li className='border-b-2 border-orange-700 my-2'>możliwość zlicowania skrzydeł okien z ościeżnicą (jedna płaszczyzna po stronie zewnętrznej)</li>
-                  <li className='border-b-2 border-orange-700 my-2'>wiele sposobów połączeń narożnych</li>
-                  <li className='my-2'>listwy przyszybowe o wysokości 22 mm i 28 mm</li>
+                  <li className='border-b-2 border-orange-700 my-2'>system PE78N SLIM industrial jest rozszerzeniem systemu PE78N SLIM, który został zaprojektowany z myślą o estetycznych wnętrzach z dużymi przeszkleniami</li>
+                  <li className='border-b-2 border-orange-700 my-2'>słupek ruchomy o szerokości 90 mm doskonale wpisuje się w charakter systemu</li>
+                  <li className='border-b-2 border-orange-700 my-2'>industrialny wygląd okna świetnie komponuje się z loftowymi wnętrzami</li>
+                  <li className='border-b-2 border-orange-700 my-2'>różne warianty izolacyjności termicznej, w zależności od zastosowanych wkładów izolacyjnych: PE78N, PE78N+, PE78NHI</li>
                 </ul>
                 <div className='mt-28'></div>
             </div>) :  (<div className='px-4'>
@@ -43,40 +42,40 @@ const Pe96 = () => {
                   <p className="font-light">z kauczuku syntetycznego EPDM wg normy PN-EN 12365-1 oraz z TPE wg DIN 16941R3</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Głębokość ościeżnicy
-                  <p className="font-light">96 mm</p>
+                  <p className="font-light">100 mm</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Głębokość skrzydła
-                  <p className="font-light">106 mm</p>
+                  <p className="font-light">108 mm</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Maksymalne wymiary skrzydła
-                  <p className="font-light">L 1700 x H 2300 mm, L1400 x H 2800 mm</p>
+                  <p className="font-light">L 1000 x H 3000 mm, L 1500 x H 1700 mm</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Maksymalna waga skrzydła
                   <p className="font-light">180 kg</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Wypełnienia
-                  <p className="font-light">Szyby pojedyncze, zespolone lub panele nieprzezierne o grubość: ościeżnica: 39 - 62 mm, skrzydło: 39 - 74 mm</p>
+                  <p className="font-light">szyby zespolone o grubości: do 62 mm</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Przepuszczalność powietrza
                   <p className="font-light">klasa 4</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Wodoszczelność
-                  <p className="font-light">klasa E1950</p>
+                  <p className="font-light">klasa E1650</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Odporność na obciążenie wiatrem
-                  <p className="font-light">klasa C5</p>
+                  <p className="font-light">klasa C5/B5</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Izolacyjność termiczna
-                  <p className="font-light">Uf od 0,82 W/m2K, Uw = 0,66 W/m2K (obliczono dla okna: L 1480 x H 2180 mm, Ug = 0,5 W/m2K, szyba dwukomorowa).</p>
+                  <p className="font-light">Uf od 1,9 W/m2K, Uw = 0,80 W/m2K (obliczono dla okna: L 1480 x H 2180 mm, Ug = 0,5 W/m2K, szyba dwukomorowa).</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Sposoby wykończenia powierzchni
                   <p className="font-light">Malowanie proszkowe farbami poliestrowymi spełniające wymogi Qualicoat, do wyboru kolory z palety RAL; anodowanie naturalne i w kolorach - spełniające wymogi Qualanod; lakierowanie na „kolor” drewna - wykończenie powierzchni spełnia wysokie wymagania antykorozyjne.</p>
                   </li>
                   <li className='border-b-2 border-orange-700'>Odporność na włamanie
-                  <p className="font-light">Klasa RC4 wg PN-EN 1627</p>
+                  <p className="font-light">klasa RC2, RC3 wg PN - EN 1627</p>
                   </li>
                   <li className=''>Dopuszczenia i świadectwa jakości
-                  <p className="font-light">Wstępne badania typu wg PN-EN 14351-1 + A2</p>
+                  <p className="font-light">wstępne badania typu wg EN 14351-1:2006+A2:2016-09</p>
                   <p className="font-light">Produkt posiada certyfikat Bronze Cradle to Cradle Certified Version 3.1</p>
                   <p className='text-xs font-light'>(Cradle to Cradle Certified® jest zastrzeżonym znakiem towarowym produktów Cradle to Cradle Products Innovation Institute)</p>
                   </li>
@@ -88,4 +87,4 @@ const Pe96 = () => {
   )
 }
 
-export default Pe96
+export default Pe78industrial
