@@ -4,7 +4,7 @@ const Dostawcy = () => {
   return (
     <div className=' bg-white bg-opacity-70'>
         <div className='flex justify-center text-4xl my-1'>
-            Nasi dostawcy usług
+            Nasi dostawcy systemów
         </div>
         <div className='grid grid-cols-1 gap-4 place-items-center lg:flex lg:justify-center'>
         <a href='https://gealan.pl/' target='_blank'>
