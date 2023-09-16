@@ -50,7 +50,7 @@ const Nav = () => {
         {name:"Ponzio PE96HI - drzwi",link:"/oferta/drzwiALU/Pe96HL"},
         {name:"Ponzio PE78N/PE78NH",link:"/oferta/drzwiALU/PE78NPE78NHL"},
         {name:"Ponzio PE68/PE78N",link:"/oferta/drzwiALU/PE68PE78N"},
-        {name:"Ponzio PE78NHI - drzwi z płaszczem „pływającym”",link:"/oferta/drzwiALU/PE78NHLPlywajace"},
+        {name:"Ponzio PE78NHI - drzwi z płaszczem pływającym",link:"/oferta/drzwiALU/PE78NHLPlywajace"},
     ]
     const [menuList,setMenuList] = useState(linksMain)
     const [menuOpen,setMenuOpen] = useState(true)
@@ -214,7 +214,7 @@ const Nav = () => {
                           <Link  href={"/oferta/drzwiALU/PE68PE78N"}>Ponzio PE68/PE78N</Link>
                         </p>
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline'>
-                            <Link  href={"/oferta/drzwiALU/PE78NHLPlywajace"}>Ponzio PE78NHI - drzwi z płaszczem „pływającym”</Link>
+                            <Link  href={"/oferta/drzwiALU/PE78NHLPlywajace"}>Ponzio PE78NHI - drzwi z płaszczem pływającym</Link>
                         </p>
                     </AnimatedMenu>
                     <Link href={"/oferta/okna"} ><button className='px-2 hover:underline'>Katalog</button></Link>

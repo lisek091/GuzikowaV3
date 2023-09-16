@@ -27,7 +27,7 @@ const PE78NHLPlywajace = () => {
             {select ? (<div className='text-lg px-4'>
                 <p className='border-y-2 border-orange-700'>Wariant systemu PE78NHI przeznaczony do wykonywania drzwi o specjalnej konstrukcji, która pozwala na uzyskanie jednolitej płaszczyzny skrzydła drzwiowego.</p>
                 <ul className='list-disc'>
-                  <li className='my-2'>bardzo dobre właściwości izolacyjne dzięki panelowi „pływającemu” umieszczonemu od strony zewnętrznej w trzykomorowej konstrukcji profili</li>
+                  <li className='my-2'>bardzo dobre właściwości izolacyjne dzięki panelowi pływającemu umieszczonemu od strony zewnętrznej w trzykomorowej konstrukcji profili</li>
                   <li className='border-y-2 border-orange-700 my-2'>redukcja odkształceń skrzydła podczas zmian temperatury</li>
                   <li className='border-b-2 border-orange-700 my-2'>różne warianty izolacyjności termicznej, w zależności od zastosowanych wkładów izolacyjnych: Ponzio PE78n, PE78N+, PE78NHI</li>
                   <li className='border-b-2 border-orange-700 my-2'>możliwość wykonywania konstrukcji o dużych gabarytach</li>
