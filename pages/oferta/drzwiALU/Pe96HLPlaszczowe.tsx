@@ -28,7 +28,7 @@ const Pe96HLPlaszczowe = () => {
                 <p className='border-y-2 border-orange-700'>System dla najbardziej wymagających użytkowników, charakteryzujący się bardzo wysoką izolacyjnością termiczną</p>
                 <ul className='list-disc'>
                   <li className='my-2'>bardzo dobre parametry izolacyjne dzięki zastosowaniu przekładek termicznych o szerokości 50 mm</li>
-                  <li className='border-y-2 border-orange-700 my-2'>redukcja odkształceń skrzydła podczas zmian temperatury dzięki panelowi "pływającemu", który oddzielono od komory zewnętrznej skrzydła drzwiowego za pomocą specjalnych punktowych izolatorów termicznych</li>
+                  <li className='border-y-2 border-orange-700 my-2'>redukcja odkształceń skrzydła podczas zmian temperatury dzięki panelowi pływającemu, który oddzielono od komory zewnętrznej skrzydła drzwiowego za pomocą specjalnych punktowych izolatorów termicznych</li>
                   <li className='border-b-2 border-orange-700 my-2'>bardzo wysoka izolacyjność termiczna Uf od 1,2 W/(m2K)</li>
                   <li className='border-b-2 border-orange-700 my-2'>ukryte odwodnienia skrzydła drzwiowego</li>
                   <li className='border-b-2 border-orange-700 my-2'>wypełnienie panelowe dwustronne o grubości 96 mm z blachami aluminiowymi o grubości 3 mm</li>
