@@ -16,7 +16,7 @@ const PE78NHLPlywajace = () => {
             <Nav/>
         <div className='text-slate-100'>.</div> 
         <div className='text-white mt-10'>.</div>
-      <p className='text-4xl justify-center flex'>PE78NHI - drzwi z płaszczem „pływającym”</p>
+      <p className='text-4xl justify-center flex'>PE78NHI - drzwi z płaszczem pływającym</p>
       <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 p-2'>
             <div style={cardStyle} className='w-full bg-contain bg-center bg-no-repeat h-96 sm:h-[32rem] mt-8'></div>
           <div>
