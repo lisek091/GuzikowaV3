@@ -29,12 +29,12 @@ const AnimatedMenu = ({name,children}:any) => {
       onMouseLeave={handleMenuLeave}
     >
       <button
-        className="py-2 px-8 flex"
+        className="py-2 px-4 flex text-sm"
       >
         {name} <span className={`ml-2 mt-1 ${isMenuVisible ? "rotate-0":"rotate-180"}`}><AiOutlineArrowLeft className='rotate-90' /></span> 
       </button>
       {isMenuVisible && (
-        <div className="absolute top-full left-0 mt-0 p-2 bg-white border border-gray-300 rounded shadow">
+        <div className="absolute top-full left-0 mt-0 p-2 bg-white border border-gray-300 rounded shadow text-sm">
             {children}
         </div>
       )}
