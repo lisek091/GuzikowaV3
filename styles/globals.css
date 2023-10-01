@@ -16,6 +16,12 @@
     background-size: cover;
     background-position: center
 }
+.cardBackground3 {
+    background-image: url("../public/P1080114.jpg");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .supply1{
     background-image: url("../utils/gealanb.jpg");  
     background-size: cover;

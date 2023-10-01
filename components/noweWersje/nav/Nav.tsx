@@ -175,7 +175,7 @@ const Nav = () => {
                           <Link  href={"/oferta/okna/Pe96"}>PE96 PASSIVE </Link>
                         </p>
                     </AnimatedMenu>
-                    <AnimatedMenu name="SYSTEMY PRZESUWNNE ALUMINIUM">
+                    <AnimatedMenu name="Systemy przesuwne aluminium">
                         <p className='transition-opacity duration-500 delay-300 opacity-100 hover:opacity-100 py-2 hover:underline w-32 text-center'>
                             <Link  href={"/oferta/systemy/przesuwneAlu/SL1600"}>SL 1600</Link>
                         </p>

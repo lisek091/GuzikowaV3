@@ -5,10 +5,8 @@ const Description = () =>{
                 <h1 className="text-5xl text-center font-semibold text-orange-700  mb-6">O naszej firmie</h1>
                 <div className="flex">
                     <div className="w-2/5 px-2"></div>
-                    <p className="text-xl">Jesteśmy firmą specjalizującą się w profesjonalnym montażu i produkcji okien.
-                    Działamy na rynku od wielu lat i zawsze stawiamy na jakość oraz indywidualne podejście do klienta.
-                    Nasz zespół to doświadczeni montażyści, którzy dbają o każdy szczegół, aby montaż przebiegł sprawnie i zgodnie z oczekiwaniami klienta.
-                    Zachęcamy do zapoznania się z naszą ofertą i skorzystania z naszych usług.</p>
+                    <p className="text-xl">Jesteśmy firmą z wieloletnim doświadczeniem samodzielnie produkującą okna w standardzie PREMIUM i wykonującą wszystkie zlecenia montażu okien według indywidualnych potrzeb Klientów. Produkcja okien oraz ich montaż realizowany jest przez zgraną grupę specjalistów i montażystów, którzy doskonale wiedzą, jak ważne są szczegóły i precyzja przy wykonywaniu wszystkich zleceń, aby montaż przebiegł zgodnie ze standardami oraz oczekiwaniami naszych Klientów.
+Zachęcamy do zapoznania się z naszą ofertą i proponowanymi rozwiązaniami, a następnie kontakt w celu skorzystania z naszych usług</p>
                     <div className="w-2/5 px-2"></div>    
                 </div>
             </div>
@@ -17,14 +15,22 @@ const Description = () =>{
                 <h1 className="text-5xl text-center font-semibold text-orange-700  mb-6">Dlaczego my?</h1>
                 <div className="flex">
                     <div className="w-2/5 px-2"></div>
-                <p className="text-xl">Wybierając naszą firmę, zyskujesz gwarancję solidnego i profesjonalnego wykonania usługi.
-                Nasz zespół to doświadczeni i wykwalifikowani montażyści, którzy posiadają odpowiednie narzędzia i sprzęt, aby przeprowadzić montaż w sposób bezpieczny i skuteczny.    
-                Ponadto, korzystając z naszych usług, zyskujesz gwarancję na wykonaną pracę oraz na jakość użytych materiałów.</p>   
+                <p className="text-xl">Wybierając naszą firmę zyskujesz gwarancję rzetelnie wykonanego zlecenia, a montowane okna charakteryzują się najwyższym poziomem jakości PREMIUM i spełniają wszelkie normy bezpieczeństwa. 
+Nasz zespół składa się z wykwalifikowanych montażystów z wieloletnim doświadczeniem, którzy realizują zlecenia z najwyższą dokładnością, wykorzystując profesjonalne i dedykowane do montażu narzędzia oraz specjalistyczny sprzęt. 
+Dzięki nam możesz być pewien bezpiecznego i solidnego wyboru montażu okien.</p>   
                 <div className="w-2/5 px-2"></div>    
                 </div>
                 
             </div>
-            <div className="border-2 border-orange-700 mx-8 my-4 border-spacing-6"></div>
+           
+        </div>
+    )
+}
+export default Description
+
+/*
+
+ <div className="border-2 border-orange-700 mx-8 my-4 border-spacing-6"></div>
             <div className="text-center">
                 <h1 className="text-5xl text-center font-semibold text-orange-700  mb-6">Usługi</h1>
                 <div className="flex">
@@ -37,7 +43,6 @@ const Description = () =>{
                 </div>
                 
             </div>
-        </div>
-    )
-}
-export default Description
+
+
+*/
