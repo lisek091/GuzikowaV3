@@ -1,3 +1,4 @@
+import Footer from '@/components/mainpage/Footer'
 import Nav from '@/components/noweWersje/nav/Nav'
 import React,{useState} from 'react'
 const PE68PE78N = () => {
@@ -7,12 +8,12 @@ const PE68PE78N = () => {
     setSelect(!select)
   }
 
-  const backgroundImagePE78 = "/PE96.png"
+  const backgroundImagePE78 = "/PRZESUWNEPE78N.png"
   const cardStyle = {
     backgroundImage: `url(${backgroundImagePE78})`,
   };
   return (
-    <div className='bg-slate-100' >
+    <div className='bg-slate-100 min-h-screen flex flex-col' >
             <Nav/>
         <div className='text-slate-100'>.</div> 
         <div className='text-white mt-10'>.</div>
@@ -84,6 +85,9 @@ const PE68PE78N = () => {
                 </ul>
             </div>)}
           </div>
+      </div>
+      <div className='mt-auto w-full'>
+          <Footer/>
       </div>
     </div>
   )

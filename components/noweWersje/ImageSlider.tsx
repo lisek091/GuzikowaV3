@@ -25,14 +25,14 @@ const ImageSlider = ({imageUrls}:ImageSliderProps) => {
 
   return (
     <div className='w-full h-full relative'>
-      <div className='w-full h-full overflow-hidden flex' style={{}}>
+      <div className='overflow-hidden' style={{display:"flex", width:"100%", height:"100%", }} >
         {imageUrls.map(url=>(
-          <Image key={url} style={{translate:`${-100 * imageIndex}%`}} src={imageUrls[imageIndex]} alt='' fill className='img-slider-img'></Image>
+          <Image key={url}  style={{translate:`${-0* imageIndex}%`}} src={imageUrls[imageIndex]} alt='' fill className='img-slider-img'></Image>
 
         ))}
       </div>
-        <button onClick={showNextImage} className='img-slider-btn ' style={{left:0}}><AiOutlineArrowLeft color='white' size={30}/></button>
-        <button onClick={showPrevImage} className='img-slider-btn ' style={{right:0}}><AiOutlineArrowRight color='white' size={30} /></button>
+        <button onClick={showNextImage} className='img-slider-btn ' style={{left:0}}><AiOutlineArrowLeft color='blue' size={30}/></button>
+        <button onClick={showPrevImage} className='img-slider-btn ' style={{right:0}}><AiOutlineArrowRight color='blue' size={30} /></button>
     </div>
   )
 }
