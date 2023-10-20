@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link'
 
 
-const images = ["/P1080114.jpg","/P1080033.jpg","/P1080050.jpg","/P1080073.jpg","/P1080108.jpg"]
-const imageUrls = ["/PE68.png","/PE78N.png"]
+const images = ["/static/images/P1080114.jpg","/static/images/P1080033.jpg","/static/images/P1080050.jpg","/static/images/P1080073.jpg","/static/images/P1080108.jpg"]
+const imageUrls = ["/static/images/PE68.png","/static/images/PE78N.png"]
 const opisy = ["System o trzykomorowej konstrukcji profili z rowkiem okuciowym w standardzie Euro.",
 "Zaawansowany system o trzykomorowej konstrukcji profili o bardzo dobrych właściwościach izolacyjnych."]
 const PrezentacjaAluminiowe = () => {
