@@ -2,16 +2,10 @@ import ImageSlider from '../ImageSlider';
 import React,{useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link'
-import {AiOutlineArrowLeft,AiOutlineArrowRight} from 'react-icons/ai'
-import img1 from '../../../public/P1080114.jpg'
-import img2 from '../../../public/P1080033.jpg'
-import img3 from '../../../public/P1080050.jpg'
-import img4 from '../../../public/P1080073.jpg'
-import img5 from '../../../public/P1080108.jpg'
-import PE68 from '../../../public/PE68.png'
-import PE78 from '../../../public/PE78N.png'
-const images = [img1.src,img2.src,img3.src,img4.src,img5.src]
-const imageUrls = [PE68.src,PE78.src]
+
+
+const images = ["/P1080114.jpg","/P1080033.jpg","/P1080050.jpg","/P1080073.jpg","/P1080108.jpg"]
+const imageUrls = ["/PE68.png","/PE78N.png"]
 const opisy = ["System o trzykomorowej konstrukcji profili z rowkiem okuciowym w standardzie Euro.",
 "Zaawansowany system o trzykomorowej konstrukcji profili o bardzo dobrych właściwościach izolacyjnych."]
 const PrezentacjaAluminiowe = () => {
@@ -50,7 +44,7 @@ const nazwy = ["PE68","PE78"]
               <div className='w-4/5 xl:3/5 h-40 border-2 rounded-xl my-8 hover:bg-slate-200 cursor-pointer'>
               <Link href={"./oferta/okna/Pe68"}>
                 <div className='w-full h-full relative flex'>
-                  <Image src={PE68} alt='pe68' width={200} height={150} className='p-2'/>
+                  <Image src="/PE68.png" alt='pe68' width={200} height={150} className='p-2'/>
                   <div className='block'>
                       <p className='text-xl md:text-2xl p-2'>Pe68</p>
                       <p className='text-sm xl:text-lg p-2'>System o trzykomorowej konstrukcji profili z rowkiem okuciowym w standardzie Euro.</p>
