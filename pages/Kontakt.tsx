@@ -1,62 +1,112 @@
 import React from 'react'
-import Nav from '@/components/noweWersje/nav/Nav'
-import ContactForm from '@/components/noweWersje/ContactForm'
-import { AiOutlineMail, AiTwotonePhone } from 'react-icons/ai'
-const Kontakt = () => {
-  return (
-    <div className='backgroundcoloraa -z-50'>
+import Nav from "@/components/noweWersje/nav/Nav"
+import Footer from "@/components/mainpage/Footer";
+
+
+export const Kontakt = () => {
+
+    const servicesItems = ["Wycena", "Doradzenie produktu", "Szczegółowe przedstawienie oferty", "Inne"]
+
+    return (
+        <>
         <Nav/>
-        <div className='h-16 text-opacity-0'>.</div>
-        <div className='flex bg-gradient-to-r from-orange-300 to-white opacity-80 justify-center mt-2'>
-            <div className='md:w-3/4 w-full border-2 border-black p-10 bg-slate-300'>
-                <div className='text-center'>
-                    <p className='text-2xl'>Formularz kontaktowy</p>
-                    <p className='text-xl'>Wypełnij formularz i umów się na spotkanie z naszym doradcą. Otrzymasz wyczerpujące informacje na temat naszej oferty.</p>
-                </div>
-                <div className='block'>
-                    <ContactForm/>
-                </div>
-                <div className='text-center text-xl flex mr-4'>
-                    <p>Zachęcamy do kontaktu z Nami jeżeli jesteś zainteresowany współpracą lub w przypadku, 
-                            gdy nasuwają Ci się dodatkowe pytania, na które nie uzyskałeś odpowiedzi odwiedzając Naszą stronę.</p>
-                    <div className='text-left text-xl md:text-2xl w-6/12 lg:w-5/12 ml-4'>
-                        <p className="">M&D.group Sp. z o.o.</p>
-                        <p className=''>biuro@md1.pl</p>
-                        <p className=''>731185100</p>
+        <main className="flex overflow-hidden">
+            <div className="flex-1 hidden lg:block">
+                <img src="https://images.unsplash.com/photo-1697135807547-5fa9fd22d9ec?auto=format&fit=crop&q=80&w=3387&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full h-screen object-cover" />
+            </div>
+            <div className="py-12 flex-1 lg:flex lg:justify-center lg:h-screen lg:overflow-auto">
+                <div className="max-w-lg flex-1 mx-auto px-4 text-gray-600">
+                    <div>
+                        <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                            Napisz do nas
+                        </h3>
+                        <p className="mt-3">
+                            Z chęcią odpowiemy na wszelkie pytania odnośnie naszych usług.
+                        </p>
                     </div>
+                    <form
+                        onSubmit={(e) => e.preventDefault()}
+                        className="space-y-5 mt-12 lg:pb-12"
+                    >
+                        <div>
+                            <label className="font-medium">
+                                Imię i naziwsko
+                            </label>
+                            <input
+                                type="text"
+                                required
+                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                            />
+                        </div>
+                        <div>
+                            <label className="font-medium">
+                                Adres email
+                            </label>
+                            <input
+                                type="email"
+                                required
+                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                            />
+                        </div>
+                        <div>
+                            <label className="font-medium">
+                                Numer telefonu
+                            </label>
+                            <div className="relative mt-2">
+                                <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
+                                    <select className="text-sm bg-transparent outline-none rounded-lg h-full">
+                                        <option>PL</option>
+                                        <option>DE</option>
+                                    </select>
+                                </div>
+                                <input
+                                    type="number"
+                                    placeholder="000 000 000"
+                                    required
+                                    className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                                />
+                            </div>
+                        </div>
+                        <div>
+                            <label className="font-medium">
+                                Usługi
+                            </label>
+                            <ul className="grid gap-y-2 gap-x-6 flex-wrap grid-cols-2 mt-3">
+                                {
+                                    servicesItems.map((item, idx) => (
+                                        <li key={idx} className="flex gap-x-3 text-sm">
+                                            <div>
+                                                <input id={`service-${idx}`} type="checkbox" className="checkbox-item peer hidden" />
+                                                <label
+                                                    htmlFor={`service-${idx}`}
+                                                    className="relative flex w-5 h-5 bg-white peer-checked:bg-indigo-600 rounded-md border ring-offset-2 ring-indigo-600 duration-150 peer-active:ring cursor-pointer after:absolute after:inset-x-0 after:top-[3px] after:m-auto after:w-1.5 after:h-2.5 after:border-r-2 after:border-b-2 after:border-white after:rotate-45"
+                                                >
+                                                </label>
+                                            </div>
+                                            <label htmlFor={`service-${idx}`} className="cursor-pointer">{item}</label>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                        <div>
+                            <label className="font-medium">
+                                Wiadomość
+                            </label>
+                            <textarea required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"></textarea>
+                        </div>
+                        <button
+                            className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg duration-150"
+                        >
+                            Wyślij
+                        </button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </div>
-  )
+        </main>
+        <Footer/>
+        </>
+    )
 }
 
 export default Kontakt
-
-/*
-
-<div className='lg:h-[36rem] flex h-[28rem] lg:p-0 px-4 pt-2 cardBackground1'>
-            <div className='block h-[36rem] w-full'>
-                <div className='opacity-80 lg:opacity-100 bg-gradient-to-r  from-orange-100 to-orange-700 h-[28rem] w-full flex'>
-                    <div className='w-2 lg:w-1/12'></div>
-                    <div className='text-left text-xl md:text-2xl mt-24 w-6/12 lg:w-5/12'>
-                        <p className="ml-4">M&D.group Sp. z o.o.</p>
-                        <p className="ml-4">Lędziny 43-143</p>
-                        <p className="ml-4">ul. Gwarków 5</p>
-                        <p className='flex'><AiOutlineMail className="text-orange-800" style={{marginRight:"5"}} size={35} />biuro@md1.pl</p>
-                        <p className='flex'><AiTwotonePhone className="text-orange-800" style={{marginRight:"3"}} size={35} />731185100</p>
-                    </div>
-                    <div className='w-2 lg:w-1/12'></div>
-                    <div className='text-left text-lg md:text-2xl mt-4 w-5/12'>
-                        <p>Zachęcamy do kontaktu z Nami jeżeli jesteś zainteresowany współpracą lub w przypadku, 
-                            gdy nasuwają Ci się dodatkowe pytania, na które nie uzyskałeś odpowiedzi odwiedzając Naszą stronę.</p>
-                    </div>
-                </div>
-                <div className='bg-gradient-to-r from-orange-300 to-orange-50 h-[8rem] w-full hidden lg:block'>         
-                </div>
-            </div>
-            <div className='cardBackground1 w-full h-full hidden lg:block'>
-            </div>
-        </div>
-
-*/
