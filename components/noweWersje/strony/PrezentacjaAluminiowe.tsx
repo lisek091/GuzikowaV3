@@ -29,10 +29,6 @@ const nazwy = ["PE68","PE78"]
   return (
     <div className='w-full px-1 lg:px-6 pt-4'>
       <div className="w-full border-2 rounded-xl lg:flex">
-        <div className='w-full hidden lg:block lg:w-1/2 lg:min-h-[40rem]' style={{position:"relative"}}>
-            <ImageSlider imageUrls={images}/>
-        </div>
-
         <div className="lg:w-1/2 p-4">
           <h1 className="p-6 text-4xl font-bold mb-4 text-[#848789]">Okna aluminiowe</h1>
             <p className='p-6 text-lg'>
@@ -44,7 +40,6 @@ const nazwy = ["PE68","PE78"]
               <div className='w-4/5 xl:3/5 h-40 border-2 rounded-xl my-8 hover:bg-slate-200 cursor-pointer'>
               <Link href={"./oferta/okna/Pe68"}>
                 <div className='w-full h-full relative flex'>
-                  <Image src="/PE68.png" alt='pe68' width={200} height={150} className='p-2'/>
                   <div className='block'>
                       <p className='text-xl md:text-2xl p-2'>Pe68</p>
                       <p className='text-sm xl:text-lg p-2'>System o trzykomorowej konstrukcji profili z rowkiem okuciowym w standardzie Euro.</p>

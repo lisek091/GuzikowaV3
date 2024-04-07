@@ -14,7 +14,7 @@ const PE68PE78N = () => {
   };
   return (
     <div className='bg-slate-100 min-h-screen flex flex-col' >
-            <Nav/>
+      <Nav/>
         <div className='text-slate-100'>.</div> 
         <div className='text-white mt-10'>.</div>
       <p className='text-4xl justify-center flex'>PE68/PE78N - drzwi płaszczowe</p>
