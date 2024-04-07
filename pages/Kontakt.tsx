@@ -30,7 +30,7 @@ export const Kontakt = () => {
                     >
                         <div>
                             <label className="font-medium">
-                                Imię i naziwsko
+                                Imię i nazwisko
                             </label>
                             <input
                                 type="text"
