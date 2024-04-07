@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import Link from 'next/link'
 const OknaPCVNavs = [
     {
         label: "", navs: [
@@ -187,7 +187,7 @@ export default () => {
             <nav className={`relative z-20 bg-white w-full md:static md:text-sm md:border-none ${state ? "shadow-lg rounded-b-xl md:shadow-none" : ""}`}>
                 <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="/" className='max-md:block hidden lg:block'>
+                        <Link href="/" className='max-md:block hidden lg:block'>
                             <img
                                 src="/logo1.8.jpg"
                                 width={180}
@@ -195,7 +195,7 @@ export default () => {
                                 alt="MD1 logo"
                                 className='rounded-lg'
                             />
-                        </a>
+                        </Link>
                         <div className="md:hidden">
                             <button className="text-gray-500 hover:text-gray-800"
                                 onClick={() => setState(!state)}
@@ -241,9 +241,9 @@ export default () => {
                                                         }
                                                     </button>
                                                 ) : (
-                                                    <a href={item.path} className="block text-gray-700 hover:text-indigo-600">
+                                                    <Link href={item.path} className="block text-gray-700 hover:text-indigo-600">
                                                         {item.title}
-                                                    </a>
+                                                    </Link>
                                                 )
                                             }
                                             {
@@ -256,7 +256,7 @@ export default () => {
                                                                     <ul className='mt-5 space-y-6'>
                                                                         {dropdownItem.navs.map((navItem, idx) => (
                                                                             <li key={idx} className="group">
-                                                                                <a href={navItem.path} className='flex gap-3 items-center'>
+                                                                                <Link href={navItem.path} className='flex gap-3 items-center'>
                                                                                     <div className='w-0 h-0 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center duration-150 group-hover:bg-indigo-600 group-hover:text-white'>
                                                                                         {navItem.icon}
                                                                                     </div>
@@ -264,7 +264,7 @@ export default () => {
                                                                                         <span className="text-gray-800 duration-200 group-hover:text-indigo-600 text-sm font-medium md:text-base">{navItem.title}</span>
                                                                                         <p className='text-sm text-gray-600 group-hover:text-gray-800 mt-1'>{navItem.desc}</p>
                                                                                     </div>
-                                                                                </a>
+                                                                                </Link>
                                                                             </li>
                                                                         ))}
                                                                     </ul>
@@ -283,14 +283,14 @@ export default () => {
                             }
                             <div className='flex-1 items-center justify-end gap-x-6 space-y-3 md:space-y-0 hidden'>
                                 <li>
-                                    <a href="" className="block py-3 text-center text-gray-700 hover:text-indigo-600 border rounded-lg md:border-none">
+                                    <Link href="" className="block py-3 text-center text-gray-700 hover:text-indigo-600 border rounded-lg md:border-none">
                                         Log in
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="" className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
+                                    <Link href="" className="block py-3 px-4 font-medium text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow md:inline">
                                         Sign in
-                                    </a>
+                                    </Link>
                                 </li>
                             </div>
                         </ul>
