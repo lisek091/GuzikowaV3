@@ -159,7 +159,7 @@ const DrzwiAluminioweNavs = [
     }
 ]
 
-export default () => {
+const Nav = () => {
 
     const [state, setState] = useState(false)
     const [drapdownState, setDrapdownState] = useState({ isActive: false, idx: null })
@@ -307,3 +307,5 @@ export default () => {
         </>
     )
 }
+
+export default Nav
