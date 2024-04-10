@@ -3,7 +3,7 @@ import React from 'react'
 
 const Bannertextobraz = () => {
     return (
-        <section className="py-14">
+        <section className="pt-14 pb-6">
             <div className="max-w-screen-xl mx-auto md:px-8">
                 <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
                     <div className="flex-1 sm:hidden lg:block">
