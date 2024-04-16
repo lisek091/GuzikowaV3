@@ -172,7 +172,7 @@ const Nav = () => {
         { title: "Systemy przesuwne aluminiowe", isDrapdown: true, navs: SystemyPrzesuwneAluminioweNavs },
         { title: "Drzwi aluminiowe", isDrapdown: true, navs:DrzwiAluminioweNavs },
         { title: "Kontakt", path: "/Kontakt", isDrapdown: false },
-        { title: "Przykładowe realizacje", path: "/Realizacje", isDrapdown: false }
+        { title: "Przykładowe realizacje", path: "/realizacje/Realizacje", isDrapdown: false }
     ]
 
     useEffect(() => {

@@ -1,14 +1,43 @@
 import React from 'react'
 import Nav from "@/components/noweWersje/nav/Nav"
 import Footer from "@/components/mainpage/Footer";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Kontakt = () => {
 
     const servicesItems = ["Wycena", "Doradzenie produktu", "Szczegółowe przedstawienie oferty", "Inne"]
 
+    async function handleSubmit(e:any) {
+        e.preventDefault();
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({
+                access_key: "d7b789ba-033a-462f-9d92-469861a48049",
+                name: e.target.name.value + " " + e.target.phonenumber.value,
+                email: e.target.email.value,
+                message: e.target.message.value,
+            }),
+        });
+        const result = await response.json();
+        if (result.success) {
+            toast.success("Wiadmość została wysłana. Wkrótce się z tobą skontaktujemy!");
+            const button = document.getElementById("submitbutton")
+            if(button){
+                button.setAttribute("disabled","")
+            }
+        }
+        else {
+            toast.error("Coś poszło nie tak. Prosimy o kontakt telefoniczny")
+        }
+    }
     return (
         <>
+        <ToastContainer />
         <Nav/>
         <main className="flex overflow-hidden">
             <div className="flex-1 hidden lg:block">
@@ -25,7 +54,7 @@ export const Kontakt = () => {
                         </p>
                     </div>
                     <form
-                        onSubmit={(e) => e.preventDefault()}
+                        onSubmit={handleSubmit}
                         className="space-y-5 mt-12 lg:pb-12"
                     >
                         <div>
@@ -34,6 +63,7 @@ export const Kontakt = () => {
                             </label>
                             <input
                                 type="text"
+                                name="name"
                                 required
                                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                             />
@@ -43,6 +73,7 @@ export const Kontakt = () => {
                                 Adres email
                             </label>
                             <input
+                                name="email"
                                 type="email"
                                 required
                                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
@@ -61,6 +92,7 @@ export const Kontakt = () => {
                                 </div>
                                 <input
                                     type="number"
+                                    name="phonenumber"
                                     placeholder="000 000 000"
                                     required
                                     className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
@@ -90,16 +122,18 @@ export const Kontakt = () => {
                             </ul>
                         </div>
                         <div>
-                            <label className="font-medium">
+                            <label  className="font-medium">
                                 Wiadomość
                             </label>
-                            <textarea required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"></textarea>
+                            <textarea name="message" required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"></textarea>
                         </div>
                         <button
                             className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-lg duration-150"
+                            id="submitbutton"
                         >
                             Wyślij
                         </button>
+                        <br></br>
                     </form>
                 </div>
             </div>

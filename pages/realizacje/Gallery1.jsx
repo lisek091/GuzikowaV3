@@ -17,18 +17,19 @@ const images = [
     },
   ];
 
-const Realizacje = () => {
+const Gallery1 = () => {
   return (
     <>
         <Nav/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <h1 className="text-2xl text-center ">Zapraszamy do kontaktu w razie pytań!</h1>
-        <br/>
-        <br/>
-        <br/>
+        <h1 className="text-gray-800 text-3xl font-semibold sm:text-4xl text-center py-10">Zapraszamy do kontaktu w razie pytań!</h1>
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 flex justify-between py-4 ">
+            <button className="px-6 py-3.5 text-white bg-indigo-600 rounded-full duration-150 hover:bg-indigo-500 active:bg-indigo-700">
+                Poprzednia galeria
+            </button>
+            <button className="px-6 py-3.5 text-white bg-indigo-600 rounded-full duration-150 hover:bg-indigo-500 active:bg-indigo-700">
+                Natepna galeria
+            </button>
+        </div>
         <br/>
         <br/>
         <ImageGallery items={images} />;
@@ -36,4 +37,4 @@ const Realizacje = () => {
   )
 }
 
-export default Realizacje
+export default Gallery1
