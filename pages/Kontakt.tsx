@@ -17,7 +17,7 @@ export const Kontakt = () => {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                access_key: "d7b789ba-033a-462f-9d92-469861a48049",
+                access_key: "8a417f24-5c14-43b0-a1f4-7f965ee43cb8",
                 name: e.target.name.value + " " + e.target.phonenumber.value,
                 email: e.target.email.value,
                 message: e.target.message.value,
